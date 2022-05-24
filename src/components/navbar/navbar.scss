@@ -110,7 +110,7 @@
       cursor: pointer;
     }
 
-    &_container {
+    .gpt3__navbar-menu_container {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
@@ -131,8 +131,23 @@
         margin: 1rem 0;
       }
 
-      &-links-sign {
+      .gpt3__navbar-menu_container-links-sign {
         display: none;
+
+        button {
+          padding: 0.75rem 1.25rem;
+          color: #fff;
+          background: #ff4820;
+          font-family: $font-family;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+
+          border-radius: 0.5rem;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
 
         @include respond(phone) {
           display: block;
