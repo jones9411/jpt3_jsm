@@ -24,13 +24,13 @@
     cursor: pointer;
   }
 
-  .gtp3__navbar-links {
+  &-links {
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .gtp3__navbar-links_logo {
+    &_logo {
       margin-right: 2rem;
 
       img {
@@ -39,7 +39,7 @@
       }
     }
 
-    .gtp3__navbar-links_container {
+    &_container {
       display: flex;
       flex-direction: row;
 
@@ -79,7 +79,7 @@
       }
     }
 
-    .gpt3__navbar-menu_container {
+    &-menu_container {
       button {
         padding: 0.75rem 1.25rem;
         color: #fff;
@@ -110,7 +110,7 @@
       cursor: pointer;
     }
 
-    .gpt3__navbar-menu_container {
+    &_container {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
@@ -131,7 +131,7 @@
         margin: 1rem 0;
       }
 
-      .gpt3__navbar-menu_container-links-sign {
+      &-links-sign {
         display: none;
 
         @include respond(phone) {
