@@ -1,0 +1,127 @@
+@use "../../Sass/" as *;
+
+.gpt3__footer {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $color-footer;
+
+  &-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-family: $font-family;
+      font-weight: 800;
+      font-size: 6rem;
+      line-height: 7.5rem;
+      letter-spacing: -0.3rem;
+
+      @include respond(tablet-port) {
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    cursor: pointer;
+
+    p {
+      box-sizing: border-box;
+      font-family: $font-family;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      word-spacing: 2px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    text-align: left;
+
+    div {
+      width: 25rem;
+      margin: 1rem;
+
+      @include respond(phone) {
+        margin: 1rem 0;
+      }
+    }
+
+    &_logo {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 12rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: $font-family;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
+    }
+
+    &_div {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      h4 {
+        font-family: $font-family;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: $font-family;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0.5rem 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    p {
+      font-family: $font-family;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+@include respond(tablet-port) {
+}
